@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadchart Information Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <h1>Quadchart Information Collection
+    </h1>
+    <form id="quadChartForm">
+        <!-- Company Information Section -->
+        <div class="section active" id="companyInformation">
+            <h2>Company Information</h2>
+            <p>1. What is the name of the company?</p>
+            <input type="text" id="companyName" name="companyName">
+            <p>2. Point of Contact</p>
+            <input type="text" id="companyContact" name="companyContact">
+            <!-- put the button on a new line -->
+            <!-- newline -->
+            <button type="button" onclick="nextSection('capabilityDescription')">Next</button>
+            
+        </div>
+        
+
+
+        <!--<p>2. What is the primary product or service your company provides?</p>
+            <input type="text" id="companyProduct" name="companyProduct">
+            <p>3. What is the primary market for your product or service?</p>
+            <input type="text" id="companyMarket" name="companyMarket">
+            <p>4. What is the primary technology or process your company uses?</p>
+            <input type="text" id="companyTechnology" name="companyTechnology">
+             -->
+
+        <!-- Capability Description Section -->
+        <div class="section" id="capabilityDescription">
+            <h2>Capability Description</h2>
+            <p>1. Can you provide a brief overview of your product? </p>
+            <textarea id="productOverview" name="productOverview"></textarea>
+            <p>2. What primary problem or need does your product address?</p>
+            <textarea id="productProblem" name="productProblem"></textarea>
+            
+            <!-- More questions here -->
+            
+            <button type="button" onclick="nextSection('keyFeatures')">Next</button>
+        </div>
+        
+        <!-- Placeholder for Key Features and Components Section -->
+        <div class="section" id="keyFeatures">
+            <h2>Key Features and Components</h2>
+            <!-- Questions for Key Features and Components -->
+            <button type="button" onclick="nextSection('companyInformation')">Next</button>
+        </div>
+        
+        <!-- Additional sections follow -->
+        
+    </form>
+    <script src="javascript.js"></script>
+</body>
+</html>

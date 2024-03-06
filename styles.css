@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+nav.container-fluid {
+    background-color: black;
+}
+nav.container-fluid ul li a {
+    color: white;
+}
+nav.container-fluid ul li strong {
+    color: white;
+}
+
+
+.grid-container {
+    display: grid;
+    /* two columns with equal space between  */
+    grid-template-columns: 1fr 1fr;
+    /* align the text boxes */
+    align-items: center;
+    gap: 5px; /* Space between columns */
+    margin-left: 50px;
+}
+
+.grid-container > div {
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px;
+}
+#streetAddress, #city, #stateProvince, #postalCode{
+    width: 150%;
+    padding: 5px 40px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: px;
+    box-sizing: border-box;
+}
+
+
+.section {
+    display: none;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.section.active {
+    display: block;
+    padding: auto;
+    margin-bottom: 10px;
+    margin-top: 2px;
+
+}
+
+.section.done {
+    display: none; /* Hide sections marked as 'done' */
+}
+
+
+
+textarea {
+    width: 300px;
+    height: 30px;
+    margin-top: 2;
+    margin-bottom: 10px;
+    padding: 1%;
+    border: 1px solid #ccc;
+    resize: vertical, horizontal; /* Allows the user to adjust the textarea size */
+}
+
+
+buttonBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+button{
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 20px 0 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+input[type=submit] {
+    background-color: #0b3177;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 20px 0 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p1{
+    display: block;
+    color: #000000;
+    font-size: 10px;
+    margin: 0px 0 0 0;
+    /* transparent font */
+    opacity: 0.8;
+    
+
+}
